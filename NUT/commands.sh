@@ -172,7 +172,7 @@ case $1 in
         ;;
     online)
         # Power on TrueNAS & PVE hosts ONLY if shutdown file exists
-        if [ test -f /etc/nut/shutdown ]; then
+        if [ -f "/etc/nut/shutdown" ]; then
             online
         fi
         ;;
